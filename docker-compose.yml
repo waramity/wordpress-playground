@@ -51,7 +51,7 @@ services:
     volumes:
       - certbot-etc:/etc/letsencrypt
       - wordpress:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email sammy@wordpress-playground.waramity.com --agree-tos --no-eff-email --staging -d wordpress-playground.waramity.com -d www.wordpress-playground.waramity.com
+    command: certonly --webroot --webroot-path=/var/www/html --email sammy@wordpress-playground.waramity.com --agree-tos --no-eff-email --force-renewal -d wordpress-playground.waramity.com -d www.wordpress-playground.waramity.com
   
 volumes:
   certbot-etc:
